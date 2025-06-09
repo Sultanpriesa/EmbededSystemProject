@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WZPibCKIXQE+0PxRRnGWm1h0A0uSWKEQqvHacPRJHJQ=",
+  "Source": "EMSAPI",
+  "BasePath": "_content/EMSAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
