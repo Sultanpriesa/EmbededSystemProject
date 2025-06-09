@@ -1,25 +1,31 @@
 using Microsoft.EntityFrameworkCore;
+using EMSAPI.Models;
 
-public class ApplicationDbContext : DbContext
+namespace EMSAPI.Data
 {
-
-    public ApplicationDbContext(DbContextOptions options) :
-    base(options)
+    public class ApplicationDbContext : DbContext
     {
-
-    }
-    public DbSet<Movement>? Movements { get; set; }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Movement>().HasKey(m => m.MoveID);
-        modelBuilder.Entity<Movement>().HasData(
-        new Movement()
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :
+            base(options)
         {
-            MoveID = 1,
-            Message = "You Got Mail!",
-            ButtonSignal = 1,
-            SensorSignal = 1,
         }
-        );
+
+        public DbSet<Movement> Movements { get; set; } = default!;
+          protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Movement>().HasKey(m => m.MoveID);
+            
+            // Seed data - for seeding, we need to provide the ID explicitly
+            modelBuilder.Entity<Movement>().HasData(
+                new Movement()
+                {
+                    MoveID = 1, // Required for seeding
+                    Message = "You Got Mail!",
+                    ButtonSignal = 1,
+                    SensorSignal = 1,
+                    DataFrom = "Frontend"
+                }
+            );
+        }
     }
 }

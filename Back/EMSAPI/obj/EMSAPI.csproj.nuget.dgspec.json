@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2024000667\\OneDrive - Southern Institute of Technology\\Desktop\\SIT Courses\\Embeded Systems\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj": {}
+    "C:\\Users\\jomna\\Documents\\GitHub\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2024000667\\OneDrive - Southern Institute of Technology\\Desktop\\SIT Courses\\Embeded Systems\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj": {
+    "C:\\Users\\jomna\\Documents\\GitHub\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2024000667\\OneDrive - Southern Institute of Technology\\Desktop\\SIT Courses\\Embeded Systems\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jomna\\Documents\\GitHub\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj",
         "projectName": "EMSAPI",
-        "projectPath": "C:\\Users\\2024000667\\OneDrive - Southern Institute of Technology\\Desktop\\SIT Courses\\Embeded Systems\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj",
-        "packagesPath": "C:\\Users\\2024000667\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2024000667\\OneDrive - Southern Institute of Technology\\Desktop\\SIT Courses\\Embeded Systems\\EmbededSystemProject\\Back\\EMSAPI\\obj\\",
+        "projectPath": "C:\\Users\\jomna\\Documents\\GitHub\\EmbededSystemProject\\Back\\EMSAPI\\EMSAPI.csproj",
+        "packagesPath": "C:\\Users\\jomna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jomna\\Documents\\GitHub\\EmbededSystemProject\\Back\\EMSAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\2024000667\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jomna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -76,6 +81,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -97,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
